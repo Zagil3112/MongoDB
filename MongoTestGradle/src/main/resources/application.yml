@@ -1,0 +1,15 @@
+server:
+  port: '9000'
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  data:
+    mongodb:
+      database: Ejemplo
+      port: '27017'
+
+      repositories:
+        enabled: 'true'
+      host: localhost
+    rest:
+      default-page-size: '10'
